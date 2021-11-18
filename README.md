@@ -1,2 +1,1 @@
-# ScrimbaPortfolio
- Portfolio Created through Scrimba Courses
+#Welcome to my portfolio page!
