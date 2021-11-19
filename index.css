@@ -307,7 +307,8 @@ header {
 
 .service {
     max-width: 500px;
-    margin: 0 auto
+    margin: 0 auto;
+    flex: 1;
 }
 
 .services {
@@ -380,17 +381,38 @@ header {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
+    padding: 2em 200px;
+}
+
+
+.my-work .section__subtitle {
+    margin-bottom: 2em;
 }
 
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fit, 300px)
+    grid-template-rows: repeat(auto-fit, 300px);
+    grid-gap: 1em;
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
     overflow: hidden;
+}
+
+.portfolio__link {
+    background-color: var(--clr-accent);
+}
+
+.portfolio__codelink {
+    text-decoration: none;
+    color: var(--clr-light);
+    font-size: 1.5em;
+}
+
+.portfolio__codelink:hover,
+.portfolio__codelink:focus-visible {
+    text-shadow: 0 0 10px rgba(255, 255, 255, .5)
 }
 
 .portfolio__img {
@@ -401,6 +423,7 @@ header {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+    transform-origin: top;
 }
 
 .portfolio__img:hover,
